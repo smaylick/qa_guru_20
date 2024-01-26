@@ -3,11 +3,8 @@ import allure
 from selene import browser, have, be
 from allure_commons._allure import step
 
+from tests.conftest import LOGIN, PASSWORD, BASE_URL
 from utils.utils import post_request
-
-LOGIN = "serezagavrilenko@gmail.com"
-PASSWORD = "123456"
-BASE_URL = "https://demowebshop.tricentis.com"
 
 
 @allure.title("Проверка успешной авторизации")
